@@ -17,7 +17,7 @@ First, clone this repository to your local machine:
 bash
 Copy
 Edit
-git clone https://github.com/your-username/project-name.git
+[git clone https://github.com/techamanpatel/Github-Analyzer.git
 cd project-name
 2. Install Dependencies
 Install the required dependencies by running:
