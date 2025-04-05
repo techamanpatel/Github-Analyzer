@@ -1,0 +1,398 @@
+/* Main Styles for GitHub Repo Analyzer - Dark Theme */
+
+body {
+  background-color: #0d1117;
+  color: #c9d1d9;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+}
+
+/* GitHub logo styling */
+.github-logo {
+  fill: #c9d1d9;
+  transition: fill 0.3s ease;
+}
+
+.github-logo:hover {
+  fill: #58a6ff;
+}
+
+/* Code font styling */
+.code-text {
+  font-family: 'Fira Code', monospace;
+}
+
+/* Avatar styling */
+.avatar-small {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+
+.card {
+  border-radius: 6px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background-color: #161b22;
+  border: 1px solid #30363d;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+.card-header {
+  font-weight: 600;
+  background-color: #21262d;
+  border-bottom: 1px solid #30363d;
+  color: #c9d1d9;
+}
+
+.progress {
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #21262d;
+}
+
+#healthScore {
+  transition: width 1s ease-in-out;
+  background-color: #238636;
+}
+.form-label{
+  color: #c9d1d9;
+}
+
+/* Contributor list styling */
+#contributorsList .list-group-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #161b22;
+  border-color: #30363d;
+  color: #c9d1d9;
+}
+#repoName , #repoStars , #repoForks , #repoIssues , #repoWatchers , #avgResolution{
+  color: #c9d1d9;
+}
+.h6{
+  color: #c9d1d9;
+}
+.list-group-item {
+  background-color: #161b22;
+  border-color: #30363d;
+  color: #c9d1d9;
+}
+
+.contributor-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.contributor-name {
+  font-weight: 600;
+  margin-bottom: 0;
+  color: #58a6ff;
+}
+
+.contributor-commits {
+  margin-left: auto;
+  background-color: #30363d;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  color: #c9d1d9;
+}
+
+/* Chart containers */
+.chart-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+/* Form input styling */
+.form-control {
+  background-color: #0d1117;
+  border-color: #30363d;
+  color: #c9d1d9;
+}
+
+.form-control:focus {
+  border-color: #58a6ff;
+  box-shadow: 0 0 0 0.2rem rgba(88, 166, 255, 0.25);
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+
+.form-text {
+  color: #8b949e;
+}
+
+.btn-primary {
+  background-color: #238636;
+  border-color: #238636;
+}
+
+.btn-primary:hover {
+  background-color: #2ea043;
+  border-color: #2ea043;
+}
+
+/* Loading indicator */
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+  color: #58a6ff;
+}
+
+/* Badge colors */
+.badge.bg-primary {
+  background-color: #1f6feb !important;
+}
+
+.badge.bg-secondary {
+  background-color: #6e7681 !important;
+}
+
+.badge.bg-success {
+  background-color: #238636 !important;
+}
+
+.badge.bg-info {
+  background-color: #58a6ff !important;
+}
+
+.badge.bg-warning {
+  background-color: #d29922 !important;
+}
+
+.badge.bg-danger {
+  background-color: #da3633 !important;
+}
+
+/* Header text colors */
+.text-white {
+  color: #c9d1d9 !important;
+}
+
+.bg-primary {
+  background-color: #1f6feb !important;
+}
+
+.bg-success {
+  background-color: #238636 !important;
+}
+
+.bg-secondary {
+  background-color: #30363d !important;
+}
+
+.bg-dark {
+  background-color: #0d1117 !important;
+}
+
+.bg-info {
+  background-color: #1f6feb !important;
+}
+
+.bg-warning {
+  background-color: #d29922 !important;
+}
+
+.text-muted {
+  color: #8b949e !important;
+}
+
+.border {
+  border-color: #30363d !important;
+}
+
+/* Alert styling */
+.alert-danger {
+  background-color: #da3633;
+  color: #f0f6fc;
+  border-color: #f85149;
+}
+
+/* Tab styling */
+.nav-tabs {
+  border-color: #30363d;
+}
+
+.nav-tabs .nav-link {
+  color: #8b949e;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-right: 10px;
+  padding: 0.5rem 1rem;
+  border-radius: 0;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.nav-tabs .nav-link:hover {
+  color: #c9d1d9;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.nav-tabs .nav-link.active {
+  color: #58a6ff;
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom: 2px solid #58a6ff;
+}
+
+/* Modal styling */
+.modal-content {
+  background-color: #161b22;
+  border-color: #30363d;
+}
+
+.modal-header {
+  border-color: #30363d;
+  background-color: #21262d;
+}
+
+.modal-footer {
+  border-color: #30363d;
+}
+
+.btn-close {
+  filter: invert(1) brightness(200%);
+}
+
+/* Repository title styling */
+.repo-title {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 1.5rem;
+  color: #58a6ff;
+}
+
+/* Table styling for comparison */
+.table {
+  color: #c9d1d9;
+}
+
+.table thead th {
+  border-bottom-color: #30363d;
+  font-weight: 600;
+}
+
+.table td, .table th {
+  border-color: #30363d;
+  padding: 0.75rem 1rem;
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(88, 166, 255, 0.1);
+}
+
+/* Benchmark bar styling */
+.benchmark-bar-container {
+  position: relative;
+  padding: 1.25rem;
+  border-radius: 8px;
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.benchmark-bar-container:hover {
+  border-color: #58a6ff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.benchmark-bar-container h5 {
+  color: #58a6ff;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.benchmark-bar-container .text-primary {
+  color: #58a6ff !important;
+}
+
+.benchmark-bar-wrapper {
+  position: relative;
+  width: 100%;
+  padding: 0.5rem 0 0.5rem;
+}
+input::placeholder{
+  color: #ffffff;
+}
+/* Category score styling */
+.score-display {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #c9d1d9;
+}
+
+.score-low {
+  color: #da3633;
+}
+
+.score-medium {
+  color: #d29922;
+}
+
+.score-high {
+  color: #238636;
+}
+
+/* Repo comparison card */
+.repo-comparison-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.repo-comparison-card .card-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.repo-comparison-card .repo-icon {
+  font-size: 1.2rem;
+  margin-right: 0.75rem;
+}
+
+/* Findings list styling */
+#findingsList .list-group-item {
+  border-left: 4px solid transparent;
+  padding: 1rem;
+}
+
+#findingsList .list-group-item.finding-good {
+  border-left-color: #238636;
+}
+
+#findingsList .list-group-item.finding-warning {
+  border-left-color: #d29922;
+}
+
+#findingsList .list-group-item.finding-bad {
+  border-left-color: #da3633;
+}
+
+#findingsList .finding-title {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+/* Footer styling */
+.footer {
+  background-color: #161b22;
+  border-top: 1px solid #30363d;
+} 
